@@ -27,29 +27,31 @@
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(90,90,138,0.15);
     margin-top: 30px;
+    max-width: 600px;
   }
   .roadmap h2 {
     color: #5a5a8a;
-    border-bottom: 2px solid #5a5a8a;
-    padding-bottom: 8px;
   }
-  .roadmap ol {
+  ol {
     padding-left: 20px;
-    color: #555;
   }
-  .roadmap li {
+  li {
     margin-bottom: 15px;
     font-size: 16px;
+    color: #555;
+    display: flex;
+    align-items: center;
+  }
+  li input[type="checkbox"] {
+    margin-right: 10px;
+    width: 18px;
+    height: 18px;
+    cursor: default;
   }
 </style>
 </head>
 <body>
 <h1>Note Taking | Blog</h1>
-
-<div class="note">
-  <h2>Hello World</h2>
-  <p>This is your single note: Hello, World!</p>
-</div>
 
 <div class="note">
   <h2>Spacetimedb</h2>
@@ -59,16 +61,16 @@
 <div class="roadmap">
   <h2>Game Development Roadmap Using SpacetimeDB</h2>
   <ol>
-    <li><strong>Understanding SpacetimeDB Capabilities:</strong> Familiarize yourself with SpacetimeDB features like ACID transactions, time-travel, and user-generated logic.</li>
-    <li><strong>Define Game Concept:</strong> Design the game idea, multiplayer interactions, and core mechanics.</li>
-    <li><strong>Setup Development Environment:</strong> Configure your local environment with necessary SDKs, SpacetimeDB access, and tools.</li>
-    <li><strong>Database Schema and Logic:</strong> Design schema for game state, players, and implement user-generated logic inside SpacetimeDB.</li>
-    <li><strong>Real-time Synchronization:</strong> Implement real-time game state updates and player interactions with low latency.</li>
-    <li><strong>Implement Game Mechanics:</strong> Code the game rules, physics, and multiplayer logic using SpacetimeDB capabilities.</li>
-    <li><strong>Time-travel Features:</strong> Add undo/redo, replay game history features using SpacetimeDB time-travel functionality.</li>
-    <li><strong>Testing and Optimization:</strong> Perform thorough testing for latency, concurrency, and scalability. Optimize queries and logic.</li>
-    <li><strong>Deployment:</strong> Deploy your game backend using SpacetimeDB for robust, scalable online play.</li>
-    <li><strong>Maintenance and Updates:</strong> Monitor performance, gather user feedback, and iterate with updates.</li>
+    <li><input type="checkbox" checked disabled> <strong>Understanding SpacetimeDB Capabilities:</strong> Familiarize yourself with SpacetimeDB features like ACID transactions, time-travel, and user-generated logic.</li>
+    <li><input type="checkbox" disabled> <strong>Define Game Concept:</strong> Design the game idea, multiplayer interactions, and core mechanics.</li>
+    <li><input type="checkbox" disabled> <strong>Setup Development Environment:</strong> Configure your local environment with necessary SDKs, SpacetimeDB access, and tools.</li>
+    <li><input type="checkbox" disabled> <strong>Database Schema and Logic:</strong> Design schema for game state, players, and implement user-generated logic inside SpacetimeDB.</li>
+    <li><input type="checkbox" disabled> <strong>Real-time Synchronization:</strong> Implement real-time game state updates and player interactions with low latency.</li>
+    <li><input type="checkbox" disabled> <strong>Game Mechanics Implementation:</strong> Code the game rules, physics, and multiplayer logic using SpacetimeDB capabilities.</li>
+    <li><input type="checkbox" disabled> <strong>Time-travel Features:</strong> Add undo/redo and replay game history features using SpacetimeDB time-travel functionality.</li>
+    <li><input type="checkbox" disabled> <strong>Testing and Optimization:</strong> Perform thorough testing for latency, concurrency, and scalability.</li>
+    <li><input type="checkbox" disabled> <strong>Deployment:</strong> Deploy your game backend using SpacetimeDB for robust multiplayer support.</li>
+    <li><input type="checkbox" disabled> <strong>Maintenance and Updates:</strong> Monitor performance, gather user feedback, and update features accordingly.</li>
   </ol>
 </div>
 
