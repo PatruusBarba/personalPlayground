@@ -17,8 +17,29 @@
     background: white;
     padding: 15px 20px;
     margin: 20px 0;
-    box-shadow: 0 0 0.1;
+    box-shadow: 0 0 5px rgba(90,90,138,0.2);
     border-left: 5px solid #5a5a8a;
+    border-radius: 5px;
+  }
+  .roadmap {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(90,90,138,0.15);
+    margin-top: 30px;
+  }
+  .roadmap h2 {
+    color: #5a5a8a;
+    border-bottom: 2px solid #5a5a8a;
+    padding-bottom: 8px;
+  }
+  .roadmap ol {
+    padding-left: 20px;
+    color: #555;
+  }
+  .roadmap li {
+    margin-bottom: 15px;
+    font-size: 16px;
   }
 </style>
 </head>
@@ -33,6 +54,22 @@
 <div class="note">
   <h2>Spacetimedb</h2>
   <p>SpacetimeDB is a platform that lets you deploy your entire application directly into a database with ACID transactions, low latency, and high throughput. It supports building multiplayer games and applications with user-generated logic, time-travel capabilities, and more.</p>
+</div>
+
+<div class="roadmap">
+  <h2>Game Development Roadmap Using SpacetimeDB</h2>
+  <ol>
+    <li><strong>Understanding SpacetimeDB Capabilities:</strong> Familiarize yourself with SpacetimeDB features like ACID transactions, time-travel, and user-generated logic.</li>
+    <li><strong>Define Game Concept:</strong> Design the game idea, multiplayer interactions, and core mechanics.</li>
+    <li><strong>Setup Development Environment:</strong> Configure your local environment with necessary SDKs, SpacetimeDB access, and tools.</li>
+    <li><strong>Database Schema and Logic:</strong> Design schema for game state, players, and implement user-generated logic inside SpacetimeDB.</li>
+    <li><strong>Real-time Synchronization:</strong> Implement real-time game state updates and player interactions with low latency.</li>
+    <li><strong>Implement Game Mechanics:</strong> Code the game rules, physics, and multiplayer logic using SpacetimeDB capabilities.</li>
+    <li><strong>Time-travel Features:</strong> Add undo/redo, replay game history features using SpacetimeDB time-travel functionality.</li>
+    <li><strong>Testing and Optimization:</strong> Perform thorough testing for latency, concurrency, and scalability. Optimize queries and logic.</li>
+    <li><strong>Deployment:</strong> Deploy your game backend using SpacetimeDB for robust, scalable online play.</li>
+    <li><strong>Maintenance and Updates:</strong> Monitor performance, gather user feedback, and iterate with updates.</li>
+  </ol>
 </div>
 
 </body>
